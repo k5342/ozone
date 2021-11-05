@@ -48,10 +48,8 @@
               <executable>${shell-executable}</executable>
               <workingDirectory>${project.build.directory}</workingDirectory>
               <arguments>
-                <argument>
-                  ${basedir}/dev-support/bin/dist-layout-stitching
-                </argument>
-                <argument>${project.build.directory}</argument>
+                <argument>../dev-support/bin/dist-layout-stitching</argument>
+                <argument>.</argument>
                 <argument>${hdds.version}</argument>
               </arguments>
             </configuration>
@@ -417,13 +415,11 @@
                 </goals>
                 <configuration>
                   <executable>${shell-executable}</executable>
-                  <workingDirectory>${project.build.directory}
-                  </workingDirectory>
+                  <workingDirectory>${project.build.directory}</workingDirectory>
                   <arguments>
-                    <argument>${basedir}/dev-support/bin/dist-tar-stitching
-                    </argument>
+                    <argument>../dev-support/bin/dist-tar-stitching</argument>
                     <argument>${hdds.version}</argument>
-                    <argument>${project.build.directory}</argument>
+                    <argument>.</argument>
                   </arguments>
                 </configuration>
               </execution>

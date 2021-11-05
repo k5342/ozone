@@ -45,7 +45,11 @@ https://maven.apache.org/xsd/maven-4.0.0.xsd">
           </execution>
         </executions>
         <configuration>
-          <executable>dev-support/bin/generate-site.sh</executable>
+            <executable>${shell-executable}</executable>
+            <workingDirectory>${project.build.directory}</workingDirectory>
+            <arguments>
+                <argument>../dev-support/bin/generate-site.sh</argument>
+            </arguments>
         </configuration>
       </plugin>
       <plugin>
