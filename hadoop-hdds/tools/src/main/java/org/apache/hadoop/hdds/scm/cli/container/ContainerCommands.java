@@ -45,6 +45,7 @@ import picocli.CommandLine.Spec;
         InfoSubcommand.class,
         CreateSubcommand.class,
         CloseSubcommand.class,
+        DeleteSubcommand.class,
         ReportSubcommand.class
     })
 @MetaInfServices(SubcommandWithParent.class)
